@@ -1,0 +1,1543 @@
+<!DOCTYPE HTML>
+<html lang="ru-RU">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116899167-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-116899167-1');
+</script>
+	<title>SecurityLab.ru</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=Windows-1251" />
+<meta name="keywords" content="информационный портал, безопасность, новости" />
+<meta name="description" content="Информационный портал по безопасности SecurityLab.ru, новости, статьи, обзор уязвимостей, вирусов и мнения аналитиков." />
+<link href="/bitrix/cache/css/ru/securitylab_index/kernel_main/kernel_main.css?153398876021669" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/cache/css/ru/securitylab_index/default_91cf237f7a0bb88d3a69cf72c3106b20/default_91cf237f7a0bb88d3a69cf72c3106b20.css?15339887603142" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/cache/css/ru/securitylab_index/template_e2607865dc5c6d32e6107318787d606e/template_e2607865dc5c6d32e6107318787d606e.css?1533988760950" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<script type="text/javascript">if(!window.BX)window.BX={};if(!window.BX.message)window.BX.message=function(mess){if(typeof mess=='object') for(var i in mess) BX.message[i]=mess[i]; return true;};</script>
+<script type="text/javascript">(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_WINDOW_CONTINUE':'Продолжить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script>
+<script type="text/javascript">(window.BX||top.BX).message({'MAIN_USER_CONSENT_REQUEST_TITLE':'Согласие пользователя','MAIN_USER_CONSENT_REQUEST_BTN_ACCEPT':'Принимаю','MAIN_USER_CONSENT_REQUEST_BTN_REJECT':'Не принимаю','MAIN_USER_CONSENT_REQUEST_LOADING':'Загрузка..','MAIN_USER_CONSENT_REQUEST_ERR_TEXT_LOAD':'Не удалось загрузить текст соглашения.'});</script>
+<script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'ru','FORMAT_DATE':'DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'SL','SERVER_TZ_OFFSET':'14400','SITE_ID':'ru','SITE_DIR':'/','USER_ID':'','SERVER_TIME':'1534005323','USER_TZ_OFFSET':'0','USER_TZ_AUTO':'Y','bitrix_sessid':'d74618c7df507d11d697317f63b6f52a'});</script>
+
+
+<script type="text/javascript" src="/bitrix/cache/js/ru/securitylab_index/kernel_main/kernel_main.js?1533988760157344"></script>
+<script type="text/javascript" src="/bitrix/js/main/core/core_db.min.js?14991255608699"></script>
+<script type="text/javascript" src="/bitrix/js/main/core/core_frame_cache.min.js?148701720411191"></script>
+<script type="text/javascript">BX.setJSList(['/bitrix/js/main/core/core.js','/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/json/json2.min.js','/bitrix/js/main/core/core_ls.js','/bitrix/js/main/core/core_fx.js','/bitrix/js/main/core/core_popup.js','/bitrix/components/bitrix/main.userconsent.request/templates/.default/user_consent.js']); </script>
+<script type="text/javascript">BX.setCSSList(['/bitrix/js/main/core/css/core.css','/bitrix/js/main/core/css/core_popup.css','/bitrix/components/index/slider.lists/templates/popular_this_week/style.css','/bitrix/components/index/slider.lists/templates/main_soft/style.css','/bitrix/components/index/slider.lists/templates/main_vulner/style.css','/bitrix/components/bitrix/main.userconsent.request/templates/.default/user_consent.css']); </script>
+
+
+<script type="text/javascript" src="/bitrix/cache/js/ru/securitylab_index/default_d7b000a3c292ddfeb76dc958b9aa6b0b/default_d7b000a3c292ddfeb76dc958b9aa6b0b.js?15339887607542"></script>
+
+	<meta http-equiv="Refresh" content="600; URL=https://www.securitylab.ru/" />
+	<meta name="language" content="Russian" /> 
+	<!--[if IE]><script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<!-- Media queries -->
+	<meta name="viewport" content="width=768">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- FAVICON -->
+	<link href="/favicon.ico" rel="shortcut icon">
+	<!-- CSS LINKS -->
+	<!-- Widgets style -->
+	<link href="/css/widgets.css" rel="stylesheet" media="screen">
+	<!-- Main style -->
+	<link href="/css/all.css" rel="stylesheet" media="screen">
+	<!--[if gte IE 9]><link rel="stylesheet" href="/css/ie9.css" media="screen, projection"><![endif]-->
+	<!--[if lte IE 8]><link rel="stylesheet" href="/css/ie8.css" media="screen, projection"><![endif]-->
+	<!--[if lte IE 7]><link rel="stylesheet" href="/css/ie7.css" media="screen, projection"><![endif]-->
+	<!-- Media queries style -->
+	<link href="/css/mq-all.css" rel="stylesheet" media="screen">	
+	<!-- Jquery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+	<!-- CSS and JS for our code -->
+	<link rel="stylesheet" type="text/css" href="/css/jquery-eu-cookie-law-popup.css"/>
+	<script src="/js/jquery-eu-cookie-law-popup.js"></script>
+
+</head>
+<body>
+<div class="eupopup eupopup-top"></div>
+<!-- wrapper -->
+<div class="wrapper">
+	<!-- header -->
+	<header class="header" role="banner">
+		<!-- header-top -->
+		<!-- header-top end -->
+		<!-- header-bottom -->
+		<div class="header-bottom">
+			<div class="container">
+				<a href="/"><h1 class="logo">SecurityLab</h1></a>
+
+<div class="last-news-block">
+<div class="last-news">
+	<a href="#" class="last-news-count" onclick="$('.show_more_news').toggle();">
+		<div class="last-news-count-value">1</div>
+				<div class="text">новая новость</div>
+				<span class="arrow-white-bottom-large"></span>
+	</a>
+	<div class="last-news-content">
+		<div class="last-news-title"><a href="https://www.securitylab.ru/news/494986.php" title="Выявлено новое вымогательское ПО KeyPass">Выявлено новое вымогательское ПО KeyPass</a></div>
+	</div>
+</div>
+<div style="width: 100%; border: 1px solid #9d3725;display: none;padding: 10px" class="show_more_news">
+					<div style="background-color: #9d3725; color: #fdfdfd; padding: 5px 10px;display: inline;">
+		11 августа, 2018		</div>
+		<ul class="news_three_column">
+											<li>
+					<a title="Выявлено новое вымогательское ПО KeyPass" href="https://www.securitylab.ru/news/494986.php">Выявлено новое вымогательское ПО KeyPass</a>
+				</li>
+						<div class="clearfix"></div>
+		</ul>
+					<div style="background-color: #9d3725; color: #fdfdfd; padding: 5px 10px;display: inline;">
+		10 августа, 2018		</div>
+		<ul class="news_three_column">
+											<li>
+					<a title="В поставляемых 4 американскими компаниями телефонах выявлена опасная уязвимость" href="https://www.securitylab.ru/news/494982.php">В поставляемых 4 американскими компаниями телефонах выявлена опасная уязвимость</a>
+				</li>
+											<li>
+					<a title="Уязвимость в VPN-приложении от ЛК раскрывала IP-адреса пользователей " href="https://www.securitylab.ru/news/494981.php">Уязвимость в VPN-приложении от ЛК раскрывала IP-адреса пользователей </a>
+				</li>
+											<li>
+					<a title="В банкоматах NCR устранены уязвимости, обнаруженные Positive Technologies " href="https://www.securitylab.ru/news/494980.php">В банкоматах NCR устранены уязвимости, обнаруженные Positive Technologies </a>
+				</li>
+											<li>
+					<a title="Обнаружено новое вредоносное ПО Princess Evolution" href="https://www.securitylab.ru/news/494979.php">Обнаружено новое вредоносное ПО Princess Evolution</a>
+				</li>
+											<li>
+					<a title="Хакеры используют JavaScript для определения версии браузера пользователя" href="https://www.securitylab.ru/news/494978.php">Хакеры используют JavaScript для определения версии браузера пользователя</a>
+				</li>
+											<li>
+					<a title="«Русского хакера» Никулина направили на психиатрическую экспертизу" href="https://www.securitylab.ru/news/494977.php">«Русского хакера» Никулина направили на психиатрическую экспертизу</a>
+				</li>
+											<li>
+					<a title="В мобильных устройствах для оплаты товаров обнаружено множество уязвимостей " href="https://www.securitylab.ru/news/494976.php">В мобильных устройствах для оплаты товаров обнаружено множество уязвимостей </a>
+				</li>
+											<li>
+					<a title="Ботнет из умных «поливалок» может осушить водохранилище" href="https://www.securitylab.ru/news/494975.php">Ботнет из умных «поливалок» может осушить водохранилище</a>
+				</li>
+											<li>
+					<a title="РКН потребует от Google ответа по поводу утечки «Документов Google» " href="https://www.securitylab.ru/news/494974.php">РКН потребует от Google ответа по поводу утечки «Документов Google» </a>
+				</li>
+											<li>
+					<a title="Вредоносное ПО на базе ИИ может узнавать жертву в лицо" href="https://www.securitylab.ru/news/494973.php">Вредоносное ПО на базе ИИ может узнавать жертву в лицо</a>
+				</li>
+											<li>
+					<a title="Бесплатный инструмент для распознавания лиц может отслеживать людей в соцсетях" href="https://www.securitylab.ru/news/494972.php">Бесплатный инструмент для распознавания лиц может отслеживать людей в соцсетях</a>
+				</li>
+						<div class="clearfix"></div>
+		</ul>
+					<div style="background-color: #9d3725; color: #fdfdfd; padding: 5px 10px;display: inline;">
+		09 августа, 2018		</div>
+		<ul class="news_three_column">
+											<li>
+					<a title="Хакеры DarkHydrus полагаются на инструменты с открытым исходным кодом" href="https://www.securitylab.ru/news/494971.php">Хакеры DarkHydrus полагаются на инструменты с открытым исходным кодом</a>
+				</li>
+											<li>
+					<a title="Ramnit вернулся с новым ботнетом Black" href="https://www.securitylab.ru/news/494970.php">Ramnit вернулся с новым ботнетом Black</a>
+				</li>
+											<li>
+					<a title="Россиянина осудили за создание программы для взлома Android-устройств" href="https://www.securitylab.ru/news/494969.php">Россиянина осудили за создание программы для взлома Android-устройств</a>
+				</li>
+											<li>
+					<a title="Верховный суд отклонил жалобу Telegram" href="https://www.securitylab.ru/news/494968.php">Верховный суд отклонил жалобу Telegram</a>
+				</li>
+											<li>
+					<a title="Microsoft указала место, где нужно искать уязвимости" href="https://www.securitylab.ru/news/494967.php">Microsoft указала место, где нужно искать уязвимости</a>
+				</li>
+											<li>
+					<a title="Уязвимость в инструменте wpa_supplicant позволяет расшифровать трафик" href="https://www.securitylab.ru/news/494966.php">Уязвимость в инструменте wpa_supplicant позволяет расшифровать трафик</a>
+				</li>
+											<li>
+					<a title="Представители РКН обсудили защиту данных с торговой палатой США" href="https://www.securitylab.ru/news/494965.php">Представители РКН обсудили защиту данных с торговой палатой США</a>
+				</li>
+											<li>
+					<a title="Samsung Galaxy S7 уязвим к атаке Meltdown" href="https://www.securitylab.ru/news/494964.php">Samsung Galaxy S7 уязвим к атаке Meltdown</a>
+				</li>
+						<div class="clearfix"></div>
+		</ul>
+	</div>
+</div>			</div>
+		</div>
+		<!-- header-bottom end -->
+				<!-- navigation -->
+		<div class="navigation">
+			<div class="container">
+				<a href="#" class="header-search-open btn-red" style=""><span class="icon-search"></span></a>
+				<a href="#" class="header-nav-open" style="right: 0;"><span class="icon-menu-small"></span></a>
+
+				<nav class="nav">
+					<ul class="nav-list">
+						<li class="sub news_list_menu">
+							<a href="/news/" class="child">Новости</a>
+							<div class="submenu">
+								<div class="submenu-inner">
+
+
+<!-- news -->
+<div class="news" id="news_list">
+
+	<!-- articles -->
+	<section class="articles_menu">
+
+					
+			<div class="column" id="bx_1986663492_494986">
+				<div class="column-inner">
+					<article class="article">
+						
+													<a href="https://www.securitylab.ru/news/494986.php" class="article-image" title="Выявлено новое вымогательское ПО KeyPass">
+								<img src="/upload/resize_cache/iblock/2d7/241_151_2/2d7250091ac1a36c2970a5efe756f9f0.jpg" alt="Выявлено новое вымогательское ПО KeyPass"/>
+							</a>
+																			<div class="date">11:48 / 11 Августа, 2018</div>
+						
+						<a href="https://www.securitylab.ru/news/494986.php" title="Выявлено новое вымогательское ПО KeyPass">Выявлено новое вымогательское ПО KeyPass</a>
+					</article>
+				</div>
+			</div>
+					
+			<div class="column" id="bx_1986663492_494982">
+				<div class="column-inner">
+					<article class="article">
+						
+													<a href="https://www.securitylab.ru/news/494982.php" class="article-image" title="В поставляемых 4 американскими компаниями телефонах выявлена опасная уязвимость">
+								<img src="/upload/resize_cache/iblock/f37/241_151_2/f373085053162bbf1153bcfd1b03da42.jpg" alt="В поставляемых 4 американскими компаниями телефонах выявлена опасная уязвимость"/>
+							</a>
+																			<div class="date">15:45 / 10 Августа, 2018</div>
+						
+						<a href="https://www.securitylab.ru/news/494982.php" title="В поставляемых 4 американскими компаниями телефонах выявлена опасная уязвимость">В поставляемых 4 американскими компаниями телефонах выявлена опасная уязвимость</a>
+					</article>
+				</div>
+			</div>
+					
+			<div class="column" id="bx_1986663492_494981">
+				<div class="column-inner">
+					<article class="article">
+						
+													<a href="https://www.securitylab.ru/news/494981.php" class="article-image" title="Уязвимость в VPN-приложении от ЛК раскрывала IP-адреса пользователей ">
+								<img src="/upload/resize_cache/iblock/8f2/241_151_2/8f28f36d8976e46d56793f662f918398.png" alt="Уязвимость в VPN-приложении от ЛК раскрывала IP-адреса пользователей "/>
+							</a>
+																			<div class="date">14:38 / 10 Августа, 2018</div>
+						
+						<a href="https://www.securitylab.ru/news/494981.php" title="Уязвимость в VPN-приложении от ЛК раскрывала IP-адреса пользователей ">Уязвимость в VPN-приложении от ЛК раскрывала IP-адреса пользователей </a>
+					</article>
+				</div>
+			</div>
+					
+			<div class="column" id="bx_1986663492_494980">
+				<div class="column-inner">
+					<article class="article">
+						
+													<a href="https://www.securitylab.ru/news/494980.php" class="article-image" title="В банкоматах NCR устранены уязвимости, обнаруженные Positive Technologies ">
+								<img src="/upload/resize_cache/iblock/27b/241_151_2/27b24da7c61633bc5db3d77c31feb35d.png" alt="В банкоматах NCR устранены уязвимости, обнаруженные Positive Technologies "/>
+							</a>
+																			<div class="date">14:31 / 10 Августа, 2018</div>
+						
+						<a href="https://www.securitylab.ru/news/494980.php" title="В банкоматах NCR устранены уязвимости, обнаруженные Positive Technologies ">В банкоматах NCR устранены уязвимости, обнаруженные Positive Technologies </a>
+					</article>
+				</div>
+			</div>
+			</section>
+	<!-- articles end -->
+<div style="background-color: #9d3725; color: #fdfdfd; padding: 5px 10px;display: inline;"><a href="https://www.securitylab.ru/news/" style="color: #fff;text-decoration: none;" onclick="return true;">Все новости</a></div>
+
+
+</div>
+<!-- news end -->								</div>
+							</div>
+						</li>
+						<li class="sub">
+							<a href="/vulnerability/" class="child">Уязвимости</a>
+							<div class="submenu">
+								<div class="submenu-inner">
+									<ul class="submenu-list partners">
+										<li><a href="/vulnerability/">
+											<div class="square-block gray"><span class="icon-file"></span></div>
+											<div class="text">Уязвимости</div>
+										</a></li>
+										<li><a href="/poc/">
+											<div class="square-block gray"><span class="icon-file"></span></div>
+											<div class="text">Эксплоиты</div>
+										</a></li>
+										<li><a href="/lab/">
+											<div class="square-block gray"><span class="icon-file"></span></div>
+											<div class="text">PT Research Lab</div>
+										</a></li>
+										<li><a href="/subscribe/vulnerability/">
+											<div class="square-block gray"><span class="icon-file"></span></div>
+											<div class="text">Подписка на уязвимости</div>
+										</a></li>
+										<li><a href="/nvd/">
+											<div class="square-block gray"><span class="icon-file"></span></div>
+											<div class="text">База уязвимостей CVE</div>
+										</a></li>
+										<li><a href="/virus/">
+											<div class="square-block gray"><span class="icon-file"></span></div>
+											<div class="text">Вирусы</div>
+										</a></li>
+
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="sub">
+							<a href="/" class="child">Статьи</a>
+							<div class="submenu">
+								<div class="submenu-inner">
+									<ul class="submenu-list  partners">
+										<li><a href="/analytics/">
+											<div class="square-block gray"><span class="icon-file"></span></div>
+											<div class="text">Статьи</div>
+										</a></li>
+										<li><a href="/contest/">
+											<div class="square-block gray"><span class="icon-file"></span></div>
+											<div class="text">Конкурсы</div>
+										</a></li>
+										<li><a href="/opinion/">
+											<div class="square-block gray"><span class="icon-file"></span></div>
+											<div class="text">Мнения</div>
+										</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li><a href="/software/">Софт</a></li>
+						<li><a href="/blog/">Блоги</a></li>
+						<li><a href="/phdays/">PHDays</a></li>
+					</ul>
+				</nav>
+
+				<div class="header-search">
+					<a href="#" class="header-search-close"><span class="icon-menu"></span></a>
+					<div class="overflow">
+						<form action="/search/" method="get" enctype="multipart/form-data" accept-charset="utf-8">
+							<div class="input-holder">
+								<input type="text" name="q" placeholder="Поиск по сайту" />
+							</div>
+							<input type="submit" value="" class="icon-search-gray" />
+						</form>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!-- navigation end -->
+
+<style>
+.nav-list .submenu ul.partners {
+	width: 100%;
+}
+
+ul.partners li{
+	float: left;
+	margin-top: 20px;
+}
+</style>	</header>
+	<!-- header end -->
+	<!-- content -->
+	<div class="content" role="main">
+		<!-- container -->
+		<div class="container">
+			<!-- main-page -->
+			<div class="main-page">
+<!-- promo-last -->
+<div class="promo-last">
+	<ul class="promo-last-list">
+
+	
+	<li id="bx_915338554_494795">
+		<a href="/analytics/494795.php" class="promo-last-item size-2" style="height: 265px; background-image: url('/upload/iblock/e72/e72b8efaae9d7cb0fec9613229127980.jpg');" title="Исследование безопасности кофемашин Nespresso Prodigio и Jura E8">
+			<div class="shadow"></div>
+			<div class="caption">
+				<h3>Исследование безопасности кофемашин Nespresso Prodigio и Jura E8</h3>
+				<div class="caption-category">Статьи</div>
+							</div>
+		</a>
+	</li>
+	
+	<li id="bx_915338554_494969">
+		<a href="/news/494969.php" class="promo-last-item size-1" style="height: 265px; background-image: url('/upload/iblock/26e/26e85c0d264f10637fc7c49dd3503376.jpg');" title="Россиянина осудили за создание программы для взлома Android-устройств">
+			<div class="shadow"></div>
+			<div class="caption">
+				<h3>Россиянина осудили за создание программы для взлома Android-устройств</h3>
+				<div class="caption-category">Новости</div>
+							</div>
+		</a>
+	</li>
+	
+	<li id="bx_915338554_494963">
+		<a href="/news/494963.php" class="promo-last-item size-1" style="height: 265px; background-image: url('/upload/iblock/cf1/cf1104fadea38101db0c7635a34f9347.jpg');" title="Обнаружен способ деанонимизации пользователей Telegram ">
+			<div class="shadow"></div>
+			<div class="caption">
+				<h3>Обнаружен способ деанонимизации пользователей Telegram </h3>
+				<div class="caption-category">Новости</div>
+							</div>
+		</a>
+	</li>
+	
+	<li id="bx_915338554_494962">
+		<a href="/news/494962.php" class="promo-last-item size-1" style="height: 265px; background-image: url('/upload/iblock/57e/57e000ab05b68043aeebd77ab9833459.jpg');" title="Уязвимость в WhatsApp позволяет изменять сообщения в групповых чатах">
+			<div class="shadow"></div>
+			<div class="caption">
+				<h3>Уязвимость в WhatsApp позволяет изменять сообщения в групповых чатах</h3>
+				<div class="caption-category">Новости</div>
+							</div>
+		</a>
+	</li>
+	
+	<li id="bx_915338554_494793">
+		<a href="/analytics/494793.php" class="promo-last-item size-1" style="height: 265px; background-image: url('/upload/iblock/51d/51d62048e65bd0f0bb6f30cf389c3ab9.png');" title="SQL-инъекция через ошибку при помощи оператора «Order By» (MSSQL)">
+			<div class="shadow"></div>
+			<div class="caption">
+				<h3>SQL-инъекция через ошибку при помощи оператора «Order By» (MSSQL)</h3>
+				<div class="caption-category">Статьи</div>
+							</div>
+		</a>
+	</li>
+	
+	<li id="bx_915338554_494745">
+		<a href="/opinion/494745.php" class="promo-last-item size-2" style="height: 265px; background-image: url('/upload/iblock/73e/73ef6249014ac7d47ad0e8cb0e1cc145.jpg');" title="Агент Орандж (в телекоме не новичок)">
+			<div class="shadow"></div>
+			<div class="caption">
+				<h3>Агент Орандж (в телекоме не новичок)</h3>
+				<div class="caption-category">Мнения</div>
+							</div>
+		</a>
+	</li>
+	</ul>
+</div>
+<!-- promo-last end -->
+
+
+				<!-- content-box -->
+				<div class="content-box">
+					<!-- content-main -->
+					<div class="content-main">
+						<!-- content-main-inner -->
+						<div class="content-main-inner">
+<style>
+.promo-last-item {background-repeat: no-repeat;}
+</style>
+
+
+<!-- news -->
+<div class="news" id="news_list">
+	<!-- block-title -->
+	<div class="block-title">
+		<div class="block-title-text">Новости</div>
+	</div>
+	<!-- block-title end -->
+	
+	<!-- articles -->
+	<section class="articles">
+
+					
+			<div class="column" id="bx_1972820692_494986">
+				<div class="column-inner">
+					<article class="article">
+
+													<div class="date">11:48 / 11 Августа, 2018</div>
+						
+						<h2><a href="/news/494986.php" title="Выявлено новое вымогательское ПО KeyPass">Выявлено новое вымогательское ПО KeyPass</a></h2>
+						
+													<a href="/news/494986.php" class="article-image" title="Выявлено новое вымогательское ПО KeyPass">
+								<img src="/upload/resize_cache/iblock/2d7/241_151_2/2d7250091ac1a36c2970a5efe756f9f0.jpg" alt="Выявлено новое вымогательское ПО KeyPass"/>
+							</a>
+						
+						<div class="article-content">
+							В настоящее время не ясно, как именно распространяется вредонос.						</div>
+					</article>
+				</div>
+			</div>
+					
+			<div class="column" id="bx_1972820692_494982">
+				<div class="column-inner">
+					<article class="article">
+
+													<div class="date">15:45 / 10 Августа, 2018</div>
+						
+						<h2><a href="/news/494982.php" title="В поставляемых 4 американскими компаниями телефонах выявлена опасная уязвимость">В поставляемых 4 американскими компаниями телефонах выявлена опасная уязвимость</a></h2>
+						
+													<a href="/news/494982.php" class="article-image" title="В поставляемых 4 американскими компаниями телефонах выявлена опасная уязвимость">
+								<img src="/upload/resize_cache/iblock/f37/241_151_2/f373085053162bbf1153bcfd1b03da42.jpg" alt="В поставляемых 4 американскими компаниями телефонах выявлена опасная уязвимость"/>
+							</a>
+						
+						<div class="article-content">
+							Уязвимость позволяет хакерам получить доступ ко всем пользовательским данным.						</div>
+					</article>
+				</div>
+			</div>
+					
+			<div class="column" id="bx_1972820692_494981">
+				<div class="column-inner">
+					<article class="article">
+
+													<div class="date">14:38 / 10 Августа, 2018</div>
+						
+						<h2><a href="/news/494981.php" title="Уязвимость в VPN-приложении от ЛК раскрывала IP-адреса пользователей ">Уязвимость в VPN-приложении от ЛК раскрывала IP-адреса пользователей </a></h2>
+						
+													<a href="/news/494981.php" class="article-image" title="Уязвимость в VPN-приложении от ЛК раскрывала IP-адреса пользователей ">
+								<img src="/upload/resize_cache/iblock/8f2/241_151_2/8f28f36d8976e46d56793f662f918398.png" alt="Уязвимость в VPN-приложении от ЛК раскрывала IP-адреса пользователей "/>
+							</a>
+						
+						<div class="article-content">
+							Уязвимые версии приложения не направляют DNS-запросы через безопасный туннель.						</div>
+					</article>
+				</div>
+			</div>
+					
+			<div class="column" id="bx_1972820692_494980">
+				<div class="column-inner">
+					<article class="article">
+
+													<div class="date">14:31 / 10 Августа, 2018</div>
+						
+						<h2><a href="/news/494980.php" title="В банкоматах NCR устранены уязвимости, обнаруженные Positive Technologies ">В банкоматах NCR устранены уязвимости, обнаруженные Positive Technologies </a></h2>
+						
+													<a href="/news/494980.php" class="article-image" title="В банкоматах NCR устранены уязвимости, обнаруженные Positive Technologies ">
+								<img src="/upload/resize_cache/iblock/27b/241_151_2/27b24da7c61633bc5db3d77c31feb35d.png" alt="В банкоматах NCR устранены уязвимости, обнаруженные Positive Technologies "/>
+							</a>
+						
+						<div class="article-content">
+							Злоумышленник мог похитить деньги, воспользовавшись недостатками механизмов шифрования запросов между управляющим компьютером банкомата и диспенсером.						</div>
+					</article>
+				</div>
+			</div>
+					
+			<div class="column" id="bx_1972820692_494979">
+				<div class="column-inner">
+					<article class="article">
+
+													<div class="date">14:01 / 10 Августа, 2018</div>
+						
+						<h2><a href="/news/494979.php" title="Обнаружено новое вредоносное ПО Princess Evolution">Обнаружено новое вредоносное ПО Princess Evolution</a></h2>
+						
+													<a href="/news/494979.php" class="article-image" title="Обнаружено новое вредоносное ПО Princess Evolution">
+								<img src="/upload/resize_cache/iblock/9f8/241_151_2/9f8dd4b01ee93a460abfa575c269e6c7.jpg" alt="Обнаружено новое вредоносное ПО Princess Evolution"/>
+							</a>
+						
+						<div class="article-content">
+							Злоумышленники предлагают Princess Evolution на подпольных хакерских форумах по модели «вредоносное ПО как услуга».						</div>
+					</article>
+				</div>
+			</div>
+					
+			<div class="column" id="bx_1972820692_494978">
+				<div class="column-inner">
+					<article class="article">
+
+													<div class="date">12:33 / 10 Августа, 2018</div>
+						
+						<h2><a href="/news/494978.php" title="Хакеры используют JavaScript для определения версии браузера пользователя">Хакеры используют JavaScript для определения версии браузера пользователя</a></h2>
+						
+													<a href="/news/494978.php" class="article-image" title="Хакеры используют JavaScript для определения версии браузера пользователя">
+								<img src="/upload/resize_cache/iblock/492/241_151_2/492b14d0ff9fccaed7748e540146bb80.png" alt="Хакеры используют JavaScript для определения версии браузера пользователя"/>
+							</a>
+						
+						<div class="article-content">
+							Наибольшей популярностью у злоумышленников пользуется функция setTimeout &#40;&#41;.						</div>
+					</article>
+				</div>
+			</div>
+					
+			<div class="column" id="bx_1972820692_494977">
+				<div class="column-inner">
+					<article class="article">
+
+													<div class="date">11:25 / 10 Августа, 2018</div>
+						
+						<h2><a href="/news/494977.php" title="«Русского хакера» Никулина направили на психиатрическую экспертизу">«Русского хакера» Никулина направили на психиатрическую экспертизу</a></h2>
+						
+													<a href="/news/494977.php" class="article-image" title="«Русского хакера» Никулина направили на психиатрическую экспертизу">
+								<img src="/upload/resize_cache/iblock/91c/241_151_2/91c4c682f8337f5281715666d7be2c53.jpeg" alt="«Русского хакера» Никулина направили на психиатрическую экспертизу"/>
+							</a>
+						
+						<div class="article-content">
+							Данное решение было принято по рекомендации суда.						</div>
+					</article>
+				</div>
+			</div>
+					
+			<div class="column" id="bx_1972820692_494976">
+				<div class="column-inner">
+					<article class="article">
+
+													<div class="date">10:25 / 10 Августа, 2018</div>
+						
+						<h2><a href="/news/494976.php" title="В мобильных устройствах для оплаты товаров обнаружено множество уязвимостей ">В мобильных устройствах для оплаты товаров обнаружено множество уязвимостей </a></h2>
+						
+													<a href="/news/494976.php" class="article-image" title="В мобильных устройствах для оплаты товаров обнаружено множество уязвимостей ">
+								<img src="/upload/resize_cache/iblock/8b3/241_151_2/8b391d886f02c7f1449c5c8132d4d957.png" alt="В мобильных устройствах для оплаты товаров обнаружено множество уязвимостей "/>
+							</a>
+						
+						<div class="article-content">
+							Злоумышленник может перехватить зашифрованное Bluetooth-соединение и изменить данные, заставив клиента заплатить больше.						</div>
+					</article>
+				</div>
+			</div>
+					
+			<div class="column" id="bx_1972820692_494975">
+				<div class="column-inner">
+					<article class="article">
+
+													<div class="date">10:01 / 10 Августа, 2018</div>
+						
+						<h2><a href="/news/494975.php" title="Ботнет из умных «поливалок» может осушить водохранилище">Ботнет из умных «поливалок» может осушить водохранилище</a></h2>
+						
+													<a href="/news/494975.php" class="article-image" title="Ботнет из умных «поливалок» может осушить водохранилище">
+								<img src="/upload/resize_cache/iblock/691/241_151_2/691aad906bda4cf32a300020946827b1.jpg" alt="Ботнет из умных «поливалок» может осушить водохранилище"/>
+							</a>
+						
+						<div class="article-content">
+							Ирригационные смарт-системы могут использоваться злоумышленниками в атаках на критическую инфраструктуру. 						</div>
+					</article>
+				</div>
+			</div>
+					
+			<div class="column" id="bx_1972820692_494974">
+				<div class="column-inner">
+					<article class="article">
+
+													<div class="date">09:05 / 10 Августа, 2018</div>
+						
+						<h2><a href="/news/494974.php" title="РКН потребует от Google ответа по поводу утечки «Документов Google» ">РКН потребует от Google ответа по поводу утечки «Документов Google» </a></h2>
+						
+													<a href="/news/494974.php" class="article-image" title="РКН потребует от Google ответа по поводу утечки «Документов Google» ">
+								<img src="/upload/resize_cache/iblock/5c3/241_151_2/5c344428ed99fadc850d89fa85b19769.jpg" alt="РКН потребует от Google ответа по поводу утечки «Документов Google» "/>
+							</a>
+						
+						<div class="article-content">
+							«Яндекс» уже отчитался перед регулятором по поводу индексации содержимого «Документов Google». 						</div>
+					</article>
+				</div>
+			</div>
+					
+			<div class="column" id="bx_1972820692_494973">
+				<div class="column-inner">
+					<article class="article">
+
+													<div class="date">08:27 / 10 Августа, 2018</div>
+						
+						<h2><a href="/news/494973.php" title="Вредоносное ПО на базе ИИ может узнавать жертву в лицо">Вредоносное ПО на базе ИИ может узнавать жертву в лицо</a></h2>
+						
+													<a href="/news/494973.php" class="article-image" title="Вредоносное ПО на базе ИИ может узнавать жертву в лицо">
+								<img src="/upload/resize_cache/iblock/50e/241_151_2/50e2df00feb793860cd89f76cb9e62d9.png" alt="Вредоносное ПО на базе ИИ может узнавать жертву в лицо"/>
+							</a>
+						
+						<div class="article-content">
+							Вредонос действует подобно снайперу, метко стреляющему в намеченную цель. 						</div>
+					</article>
+				</div>
+			</div>
+					
+			<div class="column" id="bx_1972820692_494972">
+				<div class="column-inner">
+					<article class="article">
+
+													<div class="date">07:50 / 10 Августа, 2018</div>
+						
+						<h2><a href="/news/494972.php" title="Бесплатный инструмент для распознавания лиц может отслеживать людей в соцсетях">Бесплатный инструмент для распознавания лиц может отслеживать людей в соцсетях</a></h2>
+						
+													<a href="/news/494972.php" class="article-image" title="Бесплатный инструмент для распознавания лиц может отслеживать людей в соцсетях">
+								<img src="/upload/resize_cache/iblock/b4c/241_151_2/b4ccca6b4844fa3c337e8104e6febea5.png" alt="Бесплатный инструмент для распознавания лиц может отслеживать людей в соцсетях"/>
+							</a>
+						
+						<div class="article-content">
+							Инструмент автоматически ищет людей на восьми платформах, включая Facebook, Instagram, Twitter, LinkedIn, Google&#43;, ВКонтакте и пр.						</div>
+					</article>
+				</div>
+			</div>
+					
+			<div class="column" id="bx_1972820692_494971">
+				<div class="column-inner">
+					<article class="article">
+
+													<div class="date">15:58 / 9 Августа, 2018</div>
+						
+						<h2><a href="/news/494971.php" title="Хакеры DarkHydrus полагаются на инструменты с открытым исходным кодом">Хакеры DarkHydrus полагаются на инструменты с открытым исходным кодом</a></h2>
+						
+													<a href="/news/494971.php" class="article-image" title="Хакеры DarkHydrus полагаются на инструменты с открытым исходным кодом">
+								<img src="/upload/resize_cache/iblock/f9f/241_151_2/f9fbf632c266c1bf7abe688cfeb85303.png" alt="Хакеры DarkHydrus полагаются на инструменты с открытым исходным кодом"/>
+							</a>
+						
+						<div class="article-content">
+							 Кампания предназначалась для хищения учетных данных жертв с помощью вредоносного ПО с открытым исходным кодом Phishery.						</div>
+					</article>
+				</div>
+			</div>
+					
+			<div class="column" id="bx_1972820692_494970">
+				<div class="column-inner">
+					<article class="article">
+
+													<div class="date">14:52 / 9 Августа, 2018</div>
+						
+						<h2><a href="/news/494970.php" title="Ramnit вернулся с новым ботнетом Black">Ramnit вернулся с новым ботнетом Black</a></h2>
+						
+													<a href="/news/494970.php" class="article-image" title="Ramnit вернулся с новым ботнетом Black">
+								<img src="/upload/resize_cache/iblock/6d5/241_151_2/6d5abebf0125f36af52f39db24df063f.jpg" alt="Ramnit вернулся с новым ботнетом Black"/>
+							</a>
+						
+						<div class="article-content">
+							Установившись на систему, вредонос загружает вредоносное ПО Ngioweb. 						</div>
+					</article>
+				</div>
+			</div>
+					
+			<div class="column" id="bx_1972820692_494969">
+				<div class="column-inner">
+					<article class="article">
+
+													<div class="date">14:07 / 9 Августа, 2018</div>
+						
+						<h2><a href="/news/494969.php" title="Россиянина осудили за создание программы для взлома Android-устройств">Россиянина осудили за создание программы для взлома Android-устройств</a></h2>
+						
+													<a href="/news/494969.php" class="article-image" title="Россиянина осудили за создание программы для взлома Android-устройств">
+								<img src="/upload/resize_cache/iblock/26e/241_151_2/26e85c0d264f10637fc7c49dd3503376.jpg" alt="Россиянина осудили за создание программы для взлома Android-устройств"/>
+							</a>
+						
+						<div class="article-content">
+							Мужчина создавал вредоносное ПО в течение двух месяцев.						</div>
+					</article>
+				</div>
+			</div>
+					
+			<div class="column" id="bx_1972820692_494968">
+				<div class="column-inner">
+					<article class="article">
+
+													<div class="date">13:04 / 9 Августа, 2018</div>
+						
+						<h2><a href="/news/494968.php" title="Верховный суд отклонил жалобу Telegram">Верховный суд отклонил жалобу Telegram</a></h2>
+						
+													<a href="/news/494968.php" class="article-image" title="Верховный суд отклонил жалобу Telegram">
+								<img src="/upload/resize_cache/iblock/575/241_151_2/575a9c14f1c71f168491ffeddf7bfb99.jpg" alt="Верховный суд отклонил жалобу Telegram"/>
+							</a>
+						
+						<div class="article-content">
+							Суд повторно признал законным требование ФСБ передать ключи шифрования.						</div>
+					</article>
+				</div>
+			</div>
+					
+			<div class="column" id="bx_1972820692_494967">
+				<div class="column-inner">
+					<article class="article">
+
+													<div class="date">12:15 / 9 Августа, 2018</div>
+						
+						<h2><a href="/news/494967.php" title="Microsoft указала место, где нужно искать уязвимости">Microsoft указала место, где нужно искать уязвимости</a></h2>
+						
+													<a href="/news/494967.php" class="article-image" title="Microsoft указала место, где нужно искать уязвимости">
+								<img src="/upload/resize_cache/iblock/62a/241_151_2/62ae07ed5d8371aafeab4481b515f249.jpg" alt="Microsoft указала место, где нужно искать уязвимости"/>
+							</a>
+						
+						<div class="article-content">
+							Компания рассказала об архитектуре Hyper-V и отметила элементы, требующие пристального внимания «охотников за уязвимостями». 						</div>
+					</article>
+				</div>
+			</div>
+					
+			<div class="column" id="bx_1972820692_494966">
+				<div class="column-inner">
+					<article class="article">
+
+													<div class="date">11:56 / 9 Августа, 2018</div>
+						
+						<h2><a href="/news/494966.php" title="Уязвимость в инструменте wpa_supplicant позволяет расшифровать трафик">Уязвимость в инструменте wpa_supplicant позволяет расшифровать трафик</a></h2>
+						
+													<a href="/news/494966.php" class="article-image" title="Уязвимость в инструменте wpa_supplicant позволяет расшифровать трафик">
+								<img src="/upload/resize_cache/iblock/fa9/241_151_2/fa92a821e8c2e96db923d0f33c5afd8e.png" alt="Уязвимость в инструменте wpa_supplicant позволяет расшифровать трафик"/>
+							</a>
+						
+						<div class="article-content">
+							Успешная атака требует использования TKIP и WPA2.						</div>
+					</article>
+				</div>
+			</div>
+			</section>
+	<!-- articles end -->
+
+		
+</div>
+<!-- news end -->							
+<!--'start_frame_cache_2DJmFo'--><!-- content-banner -->
+<div class="content-banner">
+</div>
+<!-- content-banner end -->
+<!--'end_frame_cache_2DJmFo'-->						</div>
+						<!-- content-main-inner end -->
+
+					</div>
+					<!-- content-main end -->
+					
+					<!-- sidebar-right -->
+					<aside class="sidebar-right" role="complementary">
+
+<style>
+ul.news_social_icons {list-style: outside none none;margin: 5px 0; padding: 0}
+ul.news_social_icons li{float: left; width: 25%;}
+ul.news_social_icons li a img.news_social_logo{ width: 100%;}
+</style>
+
+<ul class="news_social_icons">
+	<li><a href="https://t.me/SecLabNews" target="_blank"><img src="/images/social/tm.png" class="news_social_logo" title="SecurityLab в Telegram"></a></li>
+	<li><a href="https://vk.com/public47494392" target="_blank"><img src="/images/social/vk.png" class="news_social_logo" title="SecurityLab в ВКонтакте"></a></li>
+	<li><a href="https://www.facebook.com/seclabru/" target="_blank"><img src="/images/social/fb.png" class="news_social_logo" title="SecurityLab в Facebook"></a></li>
+	<li><a href="https://twitter.com/SecurityLabnews" target="_blank"><img src="/images/social/tw.png" class="news_social_logo" title="SecurityLab в Twitter"></a></li>
+</ul>
+<br style="clear: both;"/>
+
+
+						<div id="brright">
+													</div>
+
+<!-- sidebar-blogs end -->
+	<!-- sidebar-blogs -->
+	<div class="sidebar-blogs">
+		<div class="sidebar-blogs-title">
+			<div class="sidebar-blogs-title-text">в блогах</div>
+		</div>
+
+		<div class="sidebar-blogs-content">
+			<section class="blogs">
+									<article class="author" id="blg-post-344525">
+	
+						<a href="/blog/personal/tsarev/344525.php" title="Евгений Царев: ИНТЕРЕСНОЕ ЗА НЕДЕЛЮ В МИРЕ КИБЕРБЕЗОПАСНОСТИ (6-10 августа)" class="author-image" style="overflow: hidden;">
+							<img src="/upload/blog/avatar/41b/41bd38128b39547f16bd2cee41ba7ea4.jpg" alt="Евгений Царев: "  title="Евгений Царев: " />
+						</a>
+
+						<div class="author-content">
+							<div class="date">10 Августа, 2018</div>
+							<h3><a href="/blog/personal/tsarev/344525.php" title="ИНТЕРЕСНОЕ ЗА НЕДЕЛЮ В МИРЕ КИБЕРБЕЗОПАСНОСТИ (6-10 августа)">ИНТЕРЕСНОЕ ЗА НЕДЕЛЮ В МИРЕ КИБЕРБЕЗОПАСНОСТИ (6-10 августа)</a></h3>
+							<a href="/blog/personal/tsarev/">Евгений Царев</a>
+						</div>
+	
+					</article>	
+									<article class="author" id="blg-post-344524">
+	
+						<a href="/blog/personal/tsarev/344524.php" title="Евгений Царев: Вынесен приговор по делу о хищении со счета фирмы 15,5 млн рублей" class="author-image" style="overflow: hidden;">
+							<img src="/upload/blog/avatar/41b/41bd38128b39547f16bd2cee41ba7ea4.jpg" alt="Евгений Царев: "  title="Евгений Царев: " />
+						</a>
+
+						<div class="author-content">
+							<div class="date">10 Августа, 2018</div>
+							<h3><a href="/blog/personal/tsarev/344524.php" title="Вынесен приговор по делу о хищении со счета фирмы 15,5 млн рублей">Вынесен приговор по делу о хищении со счета фирмы 15,5 млн рублей</a></h3>
+							<a href="/blog/personal/tsarev/">Евгений Царев</a>
+						</div>
+	
+					</article>	
+									<article class="author" id="blg-post-344523">
+	
+						<a href="/blog/personal/bezmaly/344523.php" title="Владимир Безмалый: Как бесплатно обновить Windows 10 Home до Pro" class="author-image" style="overflow: hidden;">
+							<img src="/upload/blog/avatar/b73/b7311d76d9790ca7d37f8abaf4d08dd9.jpg" alt="Владимир Безмалый: "  title="Владимир Безмалый: " />
+						</a>
+
+						<div class="author-content">
+							<div class="date">10 Августа, 2018</div>
+							<h3><a href="/blog/personal/bezmaly/344523.php" title="Как бесплатно обновить Windows 10 Home до Pro">Как бесплатно обновить Windows 10 Home до Pro</a></h3>
+							<a href="/blog/personal/bezmaly/">Владимир Безмалый</a>
+						</div>
+	
+					</article>	
+									<article class="author" id="blg-post-344522">
+	
+						<a href="/blog/personal/bezmaly/344522.php" title="Владимир Безмалый: Правила цифровой гигиены" class="author-image" style="overflow: hidden;">
+							<img src="/upload/blog/avatar/b73/b7311d76d9790ca7d37f8abaf4d08dd9.jpg" alt="Владимир Безмалый: "  title="Владимир Безмалый: " />
+						</a>
+
+						<div class="author-content">
+							<div class="date">10 Августа, 2018</div>
+							<h3><a href="/blog/personal/bezmaly/344522.php" title="Правила цифровой гигиены">Правила цифровой гигиены</a></h3>
+							<a href="/blog/personal/bezmaly/">Владимир Безмалый</a>
+						</div>
+	
+					</article>	
+									<article class="author" id="blg-post-344515">
+	
+						<a href="/blog/company/PandaSecurityRus/344515.php" title="Panda Security в России: Групповой видеочат теперь доступен в WhatsApp" class="author-image" style="overflow: hidden;">
+							<img src="/upload/blog/avatar/d7b/d7bd364c3c5375fe057e6dca8afac019.jpg" alt="Panda Security в России: "  title="Panda Security в России: " />
+						</a>
+
+						<div class="author-content">
+							<div class="date">10 Августа, 2018</div>
+							<h3><a href="/blog/company/PandaSecurityRus/344515.php" title="Групповой видеочат теперь доступен в WhatsApp">Групповой видеочат теперь доступен в WhatsApp</a></h3>
+							<a href="/blog/company/PandaSecurityRus/">Panda Security в России</a>
+						</div>
+	
+					</article>	
+									<article class="author" id="blg-post-344519">
+	
+						<a href="/blog/personal/bezmaly/344519.php" title="Владимир Безмалый: Правила цифровой гигиены" class="author-image" style="overflow: hidden;">
+							<img src="/upload/blog/avatar/b73/b7311d76d9790ca7d37f8abaf4d08dd9.jpg" alt="Владимир Безмалый: "  title="Владимир Безмалый: " />
+						</a>
+
+						<div class="author-content">
+							<div class="date">9 Августа, 2018</div>
+							<h3><a href="/blog/personal/bezmaly/344519.php" title="Правила цифровой гигиены">Правила цифровой гигиены</a></h3>
+							<a href="/blog/personal/bezmaly/">Владимир Безмалый</a>
+						</div>
+	
+					</article>	
+							</section>
+		</div>
+	</div>
+	
+
+<div class="subscribe" id="subscribe-form">
+	<div class="block-title">
+		<div class="block-title-text">Подписка</div>
+	</div>
+	<p>Подпишитесь на получение последних материалов по безопасности от SecurityLab.ru, новости, статьи, обзоры уязвимостей и мнения аналитиков.</p>
+
+
+<!--'start_frame_cache_subscribe-form'-->	<form action="/subscribe/subscr_edit.php">
+
+		<ul class="checkboxes-list">
+							<li>
+					<div class="checkbox-holder">
+						<label for="sf_RUB_ID_20">
+							<input type="checkbox" class="checkbox" name="sf_RUB_ID[]" id="sf_RUB_ID_20" value="20" checked /> 
+							<div class="label-holder">Ежедневный выпуск от SecurityLab.Ru</div>
+						</label>
+					</div>
+				</li>
+							<li>
+					<div class="checkbox-holder">
+						<label for="sf_RUB_ID_15">
+							<input type="checkbox" class="checkbox" name="sf_RUB_ID[]" id="sf_RUB_ID_15" value="15" checked /> 
+							<div class="label-holder">Еженедельный выпуск от SecurityLab.Ru</div>
+						</label>
+					</div>
+				</li>
+					</ul>
+
+		<div class="subscribe-form">
+			<div class="input-holder">
+				<input type="text" name="sf_EMAIL" size="20" value="" title="Введите ваш e-mail" />
+			</div>
+			<div class="checkbox-holder">
+<label data-bx-user-consent="{&quot;id&quot;:1,&quot;sec&quot;:&quot;zm27v7&quot;,&quot;autoSave&quot;:true,&quot;actionUrl&quot;:&quot;\/bitrix\/components\/bitrix\/main.userconsent.request\/ajax.php&quot;,&quot;replace&quot;:{&quot;button_caption&quot;:&quot;\u041e\u043a&quot;,&quot;fields&quot;:[&quot;Email&quot;,&quot;IP-\u0430\u0434\u0440\u0435\u0441&quot;]}}" class="main-user-consent-request">
+	<input type="checkbox" value="Y"  name="">
+	<a>Нажимая на кнопку, я принимаю условия соглашения.</a>
+</label>
+<script type="text/html" data-bx-template="main-user-consent-request-loader">
+	<div class="main-user-consent-request-popup">
+		<div class="main-user-consent-request-popup-cont">
+			<div data-bx-head="" class="main-user-consent-request-popup-header"></div>
+			<div class="main-user-consent-request-popup-body">
+				<div data-bx-loader="" class="main-user-consent-request-loader">
+					<svg class="main-user-consent-request-circular" viewBox="25 25 50 50">
+						<circle class="main-user-consent-request-path" cx="50" cy="50" r="20" fill="none" stroke-width="1" stroke-miterlimit="10"></circle>
+					</svg>
+				</div>
+				<div data-bx-content="" class="main-user-consent-request-popup-content">
+					<div class="main-user-consent-request-popup-textarea-block">
+						<textarea data-bx-textarea="" class="main-user-consent-request-popup-text"></textarea>
+					</div>
+					<div class="main-user-consent-request-popup-buttons">
+						<span data-bx-btn-accept="" class="main-user-consent-request-popup-button main-user-consent-request-popup-button-acc">Y</span>
+						<span data-bx-btn-reject="" class="main-user-consent-request-popup-button main-user-consent-request-popup-button-rej">N</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>			</div>
+			<div class="buttons">
+				<div class="btn-red">
+					<span>Ок</span>
+					<input type="submit" name="OK" value="Подписаться" />
+				</div>
+			</div>
+		</div>
+	</form>	
+
+<!--'end_frame_cache_subscribe-form'--></div>						<!-- subscribe end -->
+	<div class="news-block">
+		<a href="/news/tags/%F3%FF%E7%E2%E8%EC%EE%F1%F2%FC/" style="font-size: 20px; color: #080808;">уязвимость</a> <a href="/news/tags/%D1%D8%C0/" style="font-size: 14px; color: #181818;">США</a> <a href="/news/tags/%F3%F2%E5%F7%EA%E0+%E4%E0%ED%ED%FB%F5/" style="font-size: 14px; color: #303030;">утечка данных</a> <a href="/news/tags/%E2%F0%E5%E4%EE%ED%EE%F1%ED%EE%E5+%CF%CE/" style="font-size: 14px; color: #141414;">вредоносное ПО</a> <a href="/news/tags/%D0%EE%F1%F1%E8%FF/" style="font-size: 14px; color: #606060;">Россия</a> <a href="/news/tags/%F5%E0%EA%E5%F0%FB/" style="font-size: 12px; color: #383838;">хакеры</a> <a href="/news/tags/%E2%E7%EB%EE%EC/" style="font-size: 12px; color: #707070;">взлом</a> <a href="/news/tags/%C0%D1%D3+%D2%CF/" style="font-size: 12px; color: #8C8C8C;">АСУ ТП</a> <a href="/news/tags/Google/" style="font-size: 12px; color: #282828;">Google</a> <a href="/news/tags/%EA%F0%E8%EF%F2%EE%E2%E0%EB%FE%F2%E0/" style="font-size: 11px; color: #545454;">криптовалюта</a> <a href="/news/tags/Facebook/" style="font-size: 11px; color: #646464;">Facebook</a> <a href="/news/tags/%EA%E8%E1%E5%F0%E0%F2%E0%EA%E0/" style="font-size: 11px; color: #747474;">кибератака</a> <a href="/news/tags/Telegram/" style="font-size: 11px; color: #484848;">Telegram</a> <a href="/news/tags/%C8%ED%F2%E5%F0%ED%E5%F2+%E2%E5%F9%E5%E9/" style="font-size: 11px; color: #1C1C1C;">Интернет вещей</a> <a href="/news/tags/%E1%E5%E7%EE%EF%E0%F1%ED%EE%F1%F2%FC/" style="font-size: 11px; color: #5C5C5C;">безопасность</a> <a href="/news/tags/%F4%E8%F8%E8%ED%E3/" style="font-size: 11px; color: #7C7C7C;">фишинг</a> <a href="/news/tags/Microsoft/" style="font-size: 11px; color: #4C4C4C;">Microsoft</a> <a href="/news/tags/%E1%EE%F2%ED%E5%F2/" style="font-size: 11px; color: #3C3C3C;">ботнет</a> <a href="/news/tags/%EF%E5%F0%F1%EE%ED%E0%EB%FC%ED%FB%E5+%E4%E0%ED%ED%FB%E5/" style="font-size: 11px; color: #808080;">персональные данные</a> <a href="/news/tags/%EE%E1%E7%EE%F0/" style="font-size: 11px; color: #A4A4A4;">обзор</a> <a href="/news/tags/%F1%F3%E4/" style="font-size: 11px; color: #949494;">суд</a> <a href="/news/tags/%DF%ED%E4%E5%EA%F1/" style="font-size: 10px; color: #343434;">Яндекс</a> <a href="/news/tags/%CB%E0%E1%EE%F0%E0%F2%EE%F0%E8%FF+%CA%E0%F1%EF%E5%F0%F1%EA%EE%E3%EE/" style="font-size: 10px; color: #0C0C0C;">Лаборатория Касперского</a> <a href="/news/tags/%EC%E0%E9%ED%E8%ED%E3/" style="font-size: 10px; color: #909090;">майнинг</a> <a href="/news/tags/Positive+Technologies/" style="font-size: 10px; color: #101010;">Positive Technologies</a> <a href="/news/tags/%D0%EE%F1%EA%EE%EC%ED%E0%E4%E7%EE%F0/" style="font-size: 10px; color: #2C2C2C;">Роскомнадзор</a> <a href="/news/tags/Android/" style="font-size: 10px; color: #404040;">Android</a> <a href="/news/tags/%C8%F0%E0%ED/" style="font-size: 10px; color: #888888;">Иран</a> <a href="/news/tags/%EA%F0%E8%F2%E8%F7%E5%F1%EA%E0%FF+%E8%ED%F4%F0%E0%F1%F2%F0%F3%EA%F2%F3%F0%E0/" style="font-size: 10px; color: #202020;">критическая инфраструктура</a> <a href="/news/tags/%CA%E8%F2%E0%E9/" style="font-size: 10px; color: #B4B4B4;">Китай</a> <a href="/news/tags/%F5%E0%EA%E5%F0/" style="font-size: 10px; color: #C8C8C8;">хакер</a> <a href="/news/tags/%F8%EF%E8%EE%ED%E0%E6/" style="font-size: 10px; color: #BCBCBC;">шпионаж</a> <a href="/news/tags/%D4%D1%C1/" style="font-size: 10px; color: #444444;">ФСБ</a> <a href="/news/tags/%E8%ED%F4%EE%F0%EC%E0%F6%E8%EE%ED%ED%E0%FF+%E1%E5%E7%EE%EF%E0%F1%ED%EE%F1%F2%FC/" style="font-size: 10px; color: #B0B0B0;">информационная безопасность</a> <a href="/news/tags/Linux/" style="font-size: 10px; color: #575757;">Linux</a> <a href="/news/tags/%EC%EE%F8%E5%ED%ED%E8%F7%E5%F1%F2%E2%EE/" style="font-size: 10px; color: #787878;">мошенничество</a> <a href="/news/tags/Spectre/" style="font-size: 10px; color: #B8B8B8;">Spectre</a> <a href="/news/tags/%E2%FB%EC%EE%E3%E0%F2%E5%EB%FC%F1%EA%EE%E5+%CF%CE/" style="font-size: 10px; color: #040404;">вымогательское ПО</a> <a href="/news/tags/%C2%E5%EB%E8%EA%EE%E1%F0%E8%F2%E0%ED%E8%FF/" style="font-size: 10px; color: #848484;">Великобритания</a> <a href="/news/tags/%FD%EA%F1%EF%EB%EE%E8%F2/" style="font-size: 10px; color: #ACACAC;">эксплоит</a> <a href="/news/tags/%F1%E5%F0%E2%E5%F0/" style="font-size: 10px; color: #9C9C9C;">сервер</a> <a href="/news/tags/%E0%F2%E0%EA%E0/" style="font-size: 10px; color: #686868;">атака</a> <a href="/news/tags/IoT/" style="font-size: 10px; color: #242424;">IoT</a> <a href="/news/tags/%F1%EC%E0%F0%F2%F4%EE%ED/" style="font-size: 10px; color: #C4C4C4;">смартфон</a> <a href="/news/tags/%EE%E1%ED%EE%E2%EB%E5%ED%E8%E5/" style="font-size: 10px; color: #6C6C6C;">обновление</a> <a href="/news/tags/Oracle/" style="font-size: 10px; color: #C0C0C0;">Oracle</a> <a href="/news/tags/Samsung/" style="font-size: 10px; color: #505050;">Samsung</a> <a href="/news/tags/GitHub/" style="font-size: 10px; color: #989898;">GitHub</a> <a href="/news/tags/%EF%F0%EE%E3%F0%E0%EC%EC%ED%EE%E5+%EE%E1%E5%F1%EF%E5%F7%E5%ED%E8%E5/" style="font-size: 10px; color: #A8A8A8;">программное обеспечение</a> <a href="/news/tags/%F1%EB%E5%E6%EA%E0/" style="font-size: 10px; color: #A0A0A0;">слежка</a> 		<a href="/news/tags/waf/" style="font-size: 10px; color: #242424;">waf</a> <a href="/news/tags/application+firewall/" style="font-size: 10px; color: #707070;">application firewall</a> 
+	</div>
+
+
+
+	
+
+
+
+					 
+					</aside>
+					<!-- sidebar-right end --> 
+				</div> 
+				<!-- content-box end -->
+
+
+
+<!-- news-slider-wrap -->
+<div class="news-slider-wrap">
+	<div class="block-title">
+		<div class="block-title-text">популярное за неделю</div>
+	</div>
+	<div class="news-slider">
+		<ul class="bxslider">
+											<li>
+					<article class="article" id="bx_439815919_494978">
+
+						<a href="/news/494978.php" class="article-image" title="Хакеры используют JavaScript для определения версии браузера пользователя">
+							<img src="/upload/resize_cache/iblock/492/241_151_2/492b14d0ff9fccaed7748e540146bb80.png" alt="Хакеры используют JavaScript для определения версии браузера пользователя" />
+							<div class="caption">
+								<div class="date">10 Августа, 2018</div>
+								<h3>Хакеры используют JavaScript для определения версии браузера пользователя</h3>
+							</div>
+						</a>
+					</article>
+				</li>
+											<li>
+					<article class="article" id="bx_439815919_494981">
+
+						<a href="/news/494981.php" class="article-image" title="Уязвимость в VPN-приложении от ЛК раскрывала IP-адреса пользователей ">
+							<img src="/upload/resize_cache/iblock/8f2/241_151_2/8f28f36d8976e46d56793f662f918398.png" alt="Уязвимость в VPN-приложении от ЛК раскрывала IP-адреса пользователей " />
+							<div class="caption">
+								<div class="date">10 Августа, 2018</div>
+								<h3>Уязвимость в VPN-приложении от ЛК раскрывала IP-адреса пользователей </h3>
+							</div>
+						</a>
+					</article>
+				</li>
+											<li>
+					<article class="article" id="bx_439815919_494974">
+
+						<a href="/news/494974.php" class="article-image" title="РКН потребует от Google ответа по поводу утечки «Документов Google» ">
+							<img src="/upload/resize_cache/iblock/5c3/241_151_2/5c344428ed99fadc850d89fa85b19769.jpg" alt="РКН потребует от Google ответа по поводу утечки «Документов Google» " />
+							<div class="caption">
+								<div class="date">10 Августа, 2018</div>
+								<h3>РКН потребует от Google ответа по поводу утечки «Документов Google» </h3>
+							</div>
+						</a>
+					</article>
+				</li>
+											<li>
+					<article class="article" id="bx_439815919_494977">
+
+						<a href="/news/494977.php" class="article-image" title="«Русского хакера» Никулина направили на психиатрическую экспертизу">
+							<img src="/upload/resize_cache/iblock/91c/241_151_2/91c4c682f8337f5281715666d7be2c53.jpeg" alt="«Русского хакера» Никулина направили на психиатрическую экспертизу" />
+							<div class="caption">
+								<div class="date">10 Августа, 2018</div>
+								<h3>«Русского хакера» Никулина направили на психиатрическую экспертизу</h3>
+							</div>
+						</a>
+					</article>
+				</li>
+											<li>
+					<article class="article" id="bx_439815919_494982">
+
+						<a href="/news/494982.php" class="article-image" title="В поставляемых 4 американскими компаниями телефонах выявлена опасная уязвимость">
+							<img src="/upload/resize_cache/iblock/f37/241_151_2/f373085053162bbf1153bcfd1b03da42.jpg" alt="В поставляемых 4 американскими компаниями телефонах выявлена опасная уязвимость" />
+							<div class="caption">
+								<div class="date">10 Августа, 2018</div>
+								<h3>В поставляемых 4 американскими компаниями телефонах выявлена опасная уязвимость</h3>
+							</div>
+						</a>
+					</article>
+				</li>
+											<li>
+					<article class="article" id="bx_439815919_494975">
+
+						<a href="/news/494975.php" class="article-image" title="Ботнет из умных «поливалок» может осушить водохранилище">
+							<img src="/upload/resize_cache/iblock/691/241_151_2/691aad906bda4cf32a300020946827b1.jpg" alt="Ботнет из умных «поливалок» может осушить водохранилище" />
+							<div class="caption">
+								<div class="date">10 Августа, 2018</div>
+								<h3>Ботнет из умных «поливалок» может осушить водохранилище</h3>
+							</div>
+						</a>
+					</article>
+				</li>
+											<li>
+					<article class="article" id="bx_439815919_494976">
+
+						<a href="/news/494976.php" class="article-image" title="В мобильных устройствах для оплаты товаров обнаружено множество уязвимостей ">
+							<img src="/upload/resize_cache/iblock/8b3/241_151_2/8b391d886f02c7f1449c5c8132d4d957.png" alt="В мобильных устройствах для оплаты товаров обнаружено множество уязвимостей " />
+							<div class="caption">
+								<div class="date">10 Августа, 2018</div>
+								<h3>В мобильных устройствах для оплаты товаров обнаружено множество уязвимостей </h3>
+							</div>
+						</a>
+					</article>
+				</li>
+											<li>
+					<article class="article" id="bx_439815919_494979">
+
+						<a href="/news/494979.php" class="article-image" title="Обнаружено новое вредоносное ПО Princess Evolution">
+							<img src="/upload/resize_cache/iblock/9f8/241_151_2/9f8dd4b01ee93a460abfa575c269e6c7.jpg" alt="Обнаружено новое вредоносное ПО Princess Evolution" />
+							<div class="caption">
+								<div class="date">10 Августа, 2018</div>
+								<h3>Обнаружено новое вредоносное ПО Princess Evolution</h3>
+							</div>
+						</a>
+					</article>
+				</li>
+											<li>
+					<article class="article" id="bx_439815919_494980">
+
+						<a href="/news/494980.php" class="article-image" title="В банкоматах NCR устранены уязвимости, обнаруженные Positive Technologies ">
+							<img src="/upload/resize_cache/iblock/27b/241_151_2/27b24da7c61633bc5db3d77c31feb35d.png" alt="В банкоматах NCR устранены уязвимости, обнаруженные Positive Technologies " />
+							<div class="caption">
+								<div class="date">10 Августа, 2018</div>
+								<h3>В банкоматах NCR устранены уязвимости, обнаруженные Positive Technologies </h3>
+							</div>
+						</a>
+					</article>
+				</li>
+											<li>
+					<article class="article" id="bx_439815919_494986">
+
+						<a href="/news/494986.php" class="article-image" title="Выявлено новое вымогательское ПО KeyPass">
+							<img src="/upload/resize_cache/iblock/2d7/241_151_2/2d7250091ac1a36c2970a5efe756f9f0.jpg" alt="Выявлено новое вымогательское ПО KeyPass" />
+							<div class="caption">
+								<div class="date">11 Августа, 2018</div>
+								<h3>Выявлено новое вымогательское ПО KeyPass</h3>
+							</div>
+						</a>
+					</article>
+				</li>
+					</ul>
+	</div>
+</div>
+<!-- news-slider-wrap end -->
+<!-- soft-slider-wrap -->
+<div class="soft-slider-wrap">
+	<div class="block-title">
+		<div class="block-title-text">Софт</div>
+	</div>
+	<div class="soft-slider">
+		<ul class="bxslider slider-large">
+							
+				<li  id="bx_2093064363_494705">
+					<article class="soft">
+						<h3><a href="/software/494705.php" title="МегафонАнтивзлом">МегафонАнтивзлом</a></h3>
+						<div class="soft-category">Защита цифровых данных</div>
+						Решение для защиты информации на смартфонах и планшетах.					</article>
+				</li>
+							
+				<li  id="bx_2093064363_494704">
+					<article class="soft">
+						<h3><a href="/software/494704.php" title="Veeam Backup for Microsoft Office 365">Veeam Backup for Microsoft Office 365</a></h3>
+						<div class="soft-category">Защита цифровых данных</div>
+						Утилита для защиты данных.					</article>
+				</li>
+							
+				<li  id="bx_2093064363_494703">
+					<article class="soft">
+						<h3><a href="/software/494703.php" title="Bomgar Discovery Tool">Bomgar Discovery Tool</a></h3>
+						<div class="soft-category">Анализ информации</div>
+						Решение для анализа и защиты учетных данных.					</article>
+				</li>
+							
+				<li  id="bx_2093064363_494700">
+					<article class="soft">
+						<h3><a href="/software/494700.php" title="TruCredential">TruCredential</a></h3>
+						<div class="soft-category">Защита цифровых данных</div>
+						Решение для безопасного создания, выдачи и управления ID-карточками и учетными данными.					</article>
+				</li>
+							
+				<li  id="bx_2093064363_494699">
+					<article class="soft">
+						<h3><a href="/software/494699.php" title="Central Park">Central Park</a></h3>
+						<div class="soft-category">Контроль и мониторинг</div>
+						Консоль для предотвращения, обнаружения и реагирования на проблемы безопасности.					</article>
+				</li>
+							
+				<li  id="bx_2093064363_234303">
+					<article class="soft">
+						<h3><a href="/software/234303.php" title="SmartFTP">SmartFTP</a></h3>
+						<div class="soft-category">FTP клиенты</div>
+											</article>
+				</li>
+							
+				<li  id="bx_2093064363_438913">
+					<article class="soft">
+						<h3><a href="/software/438913.php" title="NxFilter">NxFilter</a></h3>
+						<div class="soft-category">Мониторинг сети</div>
+						NxFilter - это инструмент для осуществления контроля над активностью пользователей вашей сети в Интернете.					</article>
+				</li>
+							
+				<li  id="bx_2093064363_379374">
+					<article class="soft">
+						<h3><a href="/software/379374.php" title="Total Network Inventory ">Total Network Inventory </a></h3>
+						<div class="soft-category">Инвентаризация сети</div>
+						Total Network Inventory - программа для инвентаризации сети и учета компьютеров для офисов, предприятий, малых и больших корпоративных сетей.					</article>
+				</li>
+			
+		</ul>
+	</div>
+</div>
+<!-- soft-slider-wrap end -->
+
+
+
+
+<!-- category-slider-wrap -->
+<div class="category-slider-wrap">
+	<div class="block-title">
+		<div class="block-title-text">уязвимости</div>
+	</div>
+	
+	<div class="category-slider">
+		<ul class="bxslider slider-large">
+											<li id="bx_197562429_494946">
+					<article class="category-article">
+						<div class="date">7 Августа, 2018</div>
+						<div class="category-article-title">
+							<h3><a href="/vulnerability/494946.php" title="Межсайтовый скриптинг в плагине WP Statistics для WordPress">Межсайтовый скриптинг в плагине WP Statistics для WordPress</a></h3>
+						</div>
+						<div class="category-article-content">
+							<ul class="category-article-info-list">
+								<li>
+									<div class="title">Рейтинг опасности:</div>
+									<div class="value">
+																					<ul class="danger-rating-list danger-rating-1">
+																					<li></li>
+											<li></li>
+											<li></li>
+											<li></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="title">Исправление:</div>
+									<div class="value">
+																					<span class="icon-checked"></span>
+																			</div>
+								</li>
+							</ul>
+						</div>
+					</article>
+				</li>
+											<li id="bx_197562429_494944">
+					<article class="category-article">
+						<div class="date">7 Августа, 2018</div>
+						<div class="category-article-title">
+							<h3><a href="/vulnerability/494944.php" title="Обход ограничений безопасности в Matrix Synapse">Обход ограничений безопасности в Matrix Synapse</a></h3>
+						</div>
+						<div class="category-article-content">
+							<ul class="category-article-info-list">
+								<li>
+									<div class="title">Рейтинг опасности:</div>
+									<div class="value">
+																					<ul class="danger-rating-list danger-rating-1">
+																					<li></li>
+											<li></li>
+											<li></li>
+											<li></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="title">Исправление:</div>
+									<div class="value">
+																					<span class="icon-checked"></span>
+																			</div>
+								</li>
+							</ul>
+						</div>
+					</article>
+				</li>
+											<li id="bx_197562429_494943">
+					<article class="category-article">
+						<div class="date">7 Августа, 2018</div>
+						<div class="category-article-title">
+							<h3><a href="/vulnerability/494943.php" title="Отказ в обслуживании в OpenBSD">Отказ в обслуживании в OpenBSD</a></h3>
+						</div>
+						<div class="category-article-content">
+							<ul class="category-article-info-list">
+								<li>
+									<div class="title">Рейтинг опасности:</div>
+									<div class="value">
+																					<ul class="danger-rating-list danger-rating-1">
+																					<li></li>
+											<li></li>
+											<li></li>
+											<li></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="title">Исправление:</div>
+									<div class="value">
+																					<span class="icon-checked"></span>
+																			</div>
+								</li>
+							</ul>
+						</div>
+					</article>
+				</li>
+											<li id="bx_197562429_494942">
+					<article class="category-article">
+						<div class="date">7 Августа, 2018</div>
+						<div class="category-article-title">
+							<h3><a href="/vulnerability/494942.php" title="Отказ в обслуживании в FreeBSD">Отказ в обслуживании в FreeBSD</a></h3>
+						</div>
+						<div class="category-article-content">
+							<ul class="category-article-info-list">
+								<li>
+									<div class="title">Рейтинг опасности:</div>
+									<div class="value">
+																					<ul class="danger-rating-list danger-rating-2">
+																					<li></li>
+											<li></li>
+											<li></li>
+											<li></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="title">Исправление:</div>
+									<div class="value">
+																					<span class="icon-close-darkred"></span>
+																			</div>
+								</li>
+							</ul>
+						</div>
+					</article>
+				</li>
+											<li id="bx_197562429_494940">
+					<article class="category-article">
+						<div class="date">7 Августа, 2018</div>
+						<div class="category-article-title">
+							<h3><a href="/vulnerability/494940.php" title="Отказ в обслуживании в Linux Kernel">Отказ в обслуживании в Linux Kernel</a></h3>
+						</div>
+						<div class="category-article-content">
+							<ul class="category-article-info-list">
+								<li>
+									<div class="title">Рейтинг опасности:</div>
+									<div class="value">
+																					<ul class="danger-rating-list danger-rating-2">
+																					<li></li>
+											<li></li>
+											<li></li>
+											<li></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="title">Исправление:</div>
+									<div class="value">
+																					<span class="icon-checked"></span>
+																			</div>
+								</li>
+							</ul>
+						</div>
+					</article>
+				</li>
+											<li id="bx_197562429_494933">
+					<article class="category-article">
+						<div class="date">6 Августа, 2018</div>
+						<div class="category-article-title">
+							<h3><a href="/vulnerability/494933.php" title="Отказ в обслуживании в libsndfile">Отказ в обслуживании в libsndfile</a></h3>
+						</div>
+						<div class="category-article-content">
+							<ul class="category-article-info-list">
+								<li>
+									<div class="title">Рейтинг опасности:</div>
+									<div class="value">
+																					<ul class="danger-rating-list danger-rating-1">
+																					<li></li>
+											<li></li>
+											<li></li>
+											<li></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="title">Исправление:</div>
+									<div class="value">
+																					<span class="icon-checked"></span>
+																			</div>
+								</li>
+							</ul>
+						</div>
+					</article>
+				</li>
+											<li id="bx_197562429_494931">
+					<article class="category-article">
+						<div class="date">6 Августа, 2018</div>
+						<div class="category-article-title">
+							<h3><a href="/vulnerability/494931.php" title="Выполнение удаленного кода в cGit">Выполнение удаленного кода в cGit</a></h3>
+						</div>
+						<div class="category-article-content">
+							<ul class="category-article-info-list">
+								<li>
+									<div class="title">Рейтинг опасности:</div>
+									<div class="value">
+																					<ul class="danger-rating-list danger-rating-3">
+																					<li></li>
+											<li></li>
+											<li></li>
+											<li></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="title">Исправление:</div>
+									<div class="value">
+																					<span class="icon-checked"></span>
+																			</div>
+								</li>
+							</ul>
+						</div>
+					</article>
+				</li>
+											<li id="bx_197562429_494927">
+					<article class="category-article">
+						<div class="date">6 Августа, 2018</div>
+						<div class="category-article-title">
+							<h3><a href="/vulnerability/494927.php" title="Выполнение удаленного кода в HP Inkjet Printers">Выполнение удаленного кода в HP Inkjet Printers</a></h3>
+						</div>
+						<div class="category-article-content">
+							<ul class="category-article-info-list">
+								<li>
+									<div class="title">Рейтинг опасности:</div>
+									<div class="value">
+																					<ul class="danger-rating-list danger-rating-3">
+																					<li></li>
+											<li></li>
+											<li></li>
+											<li></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="title">Исправление:</div>
+									<div class="value">
+																					<span class="icon-checked"></span>
+																			</div>
+								</li>
+							</ul>
+						</div>
+					</article>
+				</li>
+					</ul>
+	</div>
+</div>
+<!-- category-slider-wrap end -->
+
+			</div>
+			<!-- main-page end -->
+		</div>
+		<!-- container end -->
+	</div>
+	<!-- content end -->
+</div>
+<!-- wrapper end -->
+
+<!-- footer -->
+<footer class="footer" role="contentinfo">	
+	<div class="container">
+		<div class="footer-menu">
+			<ul class="footer-menu-list">
+	<li><a href="/advertiser.php">Реклама на сайте</a></li>
+	<li><a href="/about.php">О проекте</a></li>
+	<li><a href="/contacts.php">Контакты</a></li>
+	<li><a href="/copyright.php">Copyright</a></li>
+	<li><a href="/export/">Экспорт статей</a></li>
+	<li><a href="/rss.php">RSS</a></li>
+	<li><a href="/profile/">Мои параметры</a></li>
+	<li><a href="/map.php">Карта сайта</a></li>
+	<li><a href="/informer/">Информер история</a></li>
+	<li><a href="/policy.php">Политика</a></li>
+	<li><a class="popup-link popup-push" href="#popup-push"><span class="header-login-text">Оповещения</span></a></li></ul>
+
+
+<!-- popup-container -->
+<div class="popup-container" style="width: 500px; padding: 20px;">
+	<!-- popup-login -->
+	<div class="popup popup-login" id="popup-push" style=" padding: 40px;width: 500px; ">
+		<!-- popup-inner -->
+		<div class="popup-inner">
+			<div class="popup-title">
+				<h2>Оповещения</h2>
+			</div>
+			<div class="popup-content">
+				<p>Вы можете получать оповещения от SecurityLab.ru в вашем браузере</p>
+				<a href="https://app.securitylab.ru/" class="btn-red">Подписаться</a>
+				<div style="clear:both;"></div>
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+		<!-- popup-inner end -->
+		<div style="clear:both;"></div>
+	</div>
+	<!-- popup-login end -->
+	<div style="clear:both;"></div>
+</div>
+<!-- popup-container end -->
+
+		</div>
+		<div class="copyright">Работает на CMS "1С-Битрикс: Управление сайтом"</div>
+		<div id="bx-composite-banner" style="float: right;"></div>
+	</div>
+</footer>
+<!-- footer end -->
+
+<div id="SlideToTop" > ^ Наверх </div>
+
+<!-- SCRIPT LINKS -->
+
+<!-- UI -->
+<script src="/js/jquery-ui.min.js"></script>	
+<!-- Widgets -->
+<script src="/js/widgets.js"></script>
+<!-- Main functions -->
+<script src="/js/functions.js"></script>
+
+<script type="text/javascript">
+	$(function() {
+
+		$(window).scroll(function() {
+			if($(this).scrollTop() != 0) {
+				$('#SlideToTop').fadeIn();
+			} else {
+				$('#SlideToTop').fadeOut();
+			}
+		});
+		$('#SlideToTop').click(function() {
+			$('body,html').animate({scrollTop:0},800);
+		});
+	});
+ 
+</script>
+
+<noindex>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter32292334 = new Ya.Metrika({
+                    id:32292334,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/32292334" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</noindex>
+</body>
+</html>
